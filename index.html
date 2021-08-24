@@ -10,29 +10,47 @@
 
 <body>
     <div class="inputs">
-        <input type="text">
-        <button class="addOne">+</button>
-        <button class="removeOne">-</button>
-        <input type="text">
-    </div>
-    <div class="operator">
-        <input type="radio" value="+" name="selector">
-        <label for="plus">+</label>
+        <input type="number"> 
+        <div class="operator">
+            <input type="radio" value="+" name="selector" checked="checked">
+            <label for="plus">+</label>
 
-        <input type="radio" value="-" name="selector">
-        <label for="minus">-</label>
-        
-        <input type="radio" value="*" name="selector">
-        <label for="multiple">*</label>
+            <input type="radio" value="-" name="selector">
+            <label for="minus">-</label>
 
-        <input type="radio" value="/" name="selector">
-        <label for="devide">:</label>
+            <input type="radio" value="*" name="selector">
+            <label for="multiple">*</label>
+
+            <input type="radio" value="/" name="selector">
+            <label for="devide">:</label>
+        </div>
+        <input type="number">
     </div>
     <button class="getResult">Get result</button>
     <div class="result">
-
+        <!-- Dynamic JS here. -->
     </div>
 
+
+
+
+
+    <div class="mdc-slider">
+        <input class="mdc-slider__input" type="range" min="0" max="100" value="50" name="volume" aria-label="Continuous slider demo">
+        <div class="mdc-slider__track">
+          <div class="mdc-slider__track--inactive"></div>
+          <div class="mdc-slider__track--active">
+            <div class="mdc-slider__track--active_fill"></div>
+          </div>
+        </div>
+        <div class="mdc-slider__thumb">
+          <div class="mdc-slider__thumb-knob"></div>
+        </div>
+      </div>
+
+
+
+    
     <script src="js/script.js"></script>
 </body>
 
