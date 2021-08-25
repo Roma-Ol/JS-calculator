@@ -1,7 +1,4 @@
 'use strict';
-import {MDCSlider} from '@material/slider';
-
-const slider = new MDCSlider(document.querySelector('.mdc-slider'));
 let wrapper = document.querySelector('.inputs'),
     firstElement = document.querySelector('.inputs').firstElementChild,
     firstElementValue,
@@ -16,7 +13,7 @@ button.addEventListener('click', () => {
 
     if (firstElement.value !== '' && secondElement.value !== '') {
 
-        const firstElementValue = Number(firstElement.value),
+        let firstElementValue = Number(firstElement.value),
             secondElementValue = Number(secondElement.value),
             operator = document.querySelector('input[name=selector]:checked'),
             reg = new RegExp('^[0-9]+$');
@@ -38,11 +35,15 @@ button.addEventListener('click', () => {
         const resetButton = document.createElement('button');
         resetButton.classList.add('resetButton');
         resetButton.innerHTML = 'Reset';
-        document.body.append(resetButton);
-        
-        console.error(resetButton);
-        
+        resetButton.addEventListener('click', ()=> {
+            firstElement.value = '';
+            secondElement.value = '';
+            result.innerHTML = '';
+            resetButton.remove();
+        });
+        document.body.append(resetButton);        
     } else {
         result.innerHTML = ('Please fill all the fields');
     }
+
 });

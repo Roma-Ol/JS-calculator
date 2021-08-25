@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  color: #253031;
+  background-image: url(media/aaa.jpg);
+  background-color: white;
+}
+body header {
+  background: #66d7d18a;
+}
+body header .heading {
+  text-align: center;
+  padding: 30px 15px 0 15px;
+}
+body header .heading-first {
+  font-size: 40px;
+}
+body header .heading-second {
+  font-size: 15px;
+  font-weight: 100;
+  padding: 15px 15px 30px 15px;
+}
+body .content {
+  background-image: url("first.jpg");
+  padding: 30px 15px;
+}
+body .content .number-input {
+  height: 150px;
+  width: 260px;
+  border: none;
+  font-size: 80px;
+  transition: 1s;
+}
+body .content .inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .content .inputs .operator {
+  display: flex;
+  flex-direction: column;
+}
+/*# sourceMappingURL=style.css.map */
