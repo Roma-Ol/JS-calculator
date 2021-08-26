@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
 </head>
@@ -19,21 +20,21 @@
     <div class="inputs">
       <input type="number" class="number-input">
       <div class="operator">
-        <input type="radio" value="+" name="selector" checked="checked">
-        <label for="plus">+</label>
+          <input type="radio" id="option1" class="btn-check form-check-label" autocomplete="off" value="+" name="selector" checked>
+          <label class="btn btn-primary" for="option1">+</label>
 
-        <input type="radio" value="-" name="selector">
-        <label for="minus">-</label>
+          <input type="radio" id="option2" class="btn-check" autocomplete="off" value="-" name="selector">
+          <label class="btn btn-primary" for="option2">-</label>
 
-        <input type="radio" value="*" name="selector">
-        <label for="multiple">*</label>
+          <input type="radio" id="option3" class="btn-check" autocomplete="off" value="*" name="selector">
+          <label class="btn btn-primary" for="option3">*</label>
 
-        <input type="radio" value="/" name="selector">
-        <label for="devide">:</label>
+          <input type="radio" id="option4" class="btn-check" autocomplete="off" value="/" name="selector">
+          <label class="btn btn-primary" for="option4">:</label>
       </div>
       <input type="number" class="number-input">
     </div>
-    <button class="getResult">Get result</button>
+    <button class="getResult btn btn-primary">Get result</button>
     <div class="result">
       <!-- Dynamic JS here. -->
     </div>

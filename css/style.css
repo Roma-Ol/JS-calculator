@@ -37,8 +37,4 @@ body .content .inputs {
   justify-content: center;
   align-items: center;
 }
-body .content .inputs .operator {
-  display: flex;
-  flex-direction: column;
-}
 /*# sourceMappingURL=style.css.map */
